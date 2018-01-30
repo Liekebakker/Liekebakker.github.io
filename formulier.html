@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flixbus</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="formulier.html">Aanmelden</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form class="container" action="/action_page.php">
+       <fieldset>
+            <legend>Inloggegevens</legend>
+            <label for="gebruikersnaamlogin">Gebruikersnaam</label>
+            <input required type="text" id="gebruikersnaamlogin" name="gebruikersnaamlogin" placeholder="Gebruikersnaamlogin">
+
+            <label for="wachtwoordlogin">Wachtwoord</label>
+            <input required type="password" id="wachtwoordlogin" name="wachtwoordlogin" placeholder="Wachtwoord">
+        </fieldset>
+
+       <input type="submit" value="Login">
+       
+        <fieldset>
+            <legend> Nog geen account?</legend>
+            <label for="gebruikersnaam">Gebruikersnaam</label>
+            <input required type="text" id="gebruikersnaam" name="gebruikersnaam" placeholder="Gebruikersnaam">
+
+            <label for="wachtwoord">Wachtwoord</label>
+            <input required type="password" id="wachtwoord" name="wachtwoord" placeholder="Wachtwoord">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email adres">
+        </fieldset>
+
+        <fieldset>
+            <legend>Kies de genres die je aanspreken:</legend>
+
+            <input type="checkbox" name="Categorie2" value="Romantiek" id="Romantiek">
+            <label for="Romantiek">Romantiek</label>
+            <input type="checkbox" name="Categorie3" value="Detective" id="Detective">
+            <label for="Detective">Detective</label>
+            <input type="checkbox" name="Categorie4" value="Thriller" id="Thriller">
+            <label for="Thriller">Thriller</label>
+            <input type="checkbox" name="Categorie5" value="Zombie" id="Zombie">
+            <label for="Zombie">Zombie</label>
+        </fieldset>
+
+        <fieldset>
+            
+            <legend class="persoonlijk">persoonlijke gegevens</legend>
+            
+            <input type="radio" name="geslacht" value="man" id="man">
+            <label for="man">man</label>
+            <input type="radio" name="geslacht" value="vrouw" id="vrouw">
+            <label for="vrouw">vrouw</label>
+            <input type="radio" name="geslacht" value="anders" id="anders">
+            <label for="anders">anders</label>
+            <label for="Geboortedatum">Geboortedatum</label>
+            <input type="date" name="Geboortedatum" id="Geboortedatum" placeholder="dd-mm-jjjj">
+        </fieldset>
+
+
+        <input type="submit" value="aanmelden">
+        
+
+    </form>
+</body>
+
+</html>
