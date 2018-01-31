@@ -3,10 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
-strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,17 +14,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -35,9 +22,7 @@ body {
     line-height: 1em;
     font-family: sans-serif;
     font-size: 1em;
-
 }
-
 
 ol,
 ul {
@@ -91,7 +76,9 @@ h1 {
     color: #2d2d2d;
 
 }
-
+.aanbevolen {
+   animation: zoomInDown 1.5s;
+}
 h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -245,19 +232,13 @@ main img: hover {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-/*    transform: translateY(-300%);*/
-/*    margin-left: 10em;*/
-/*    display: inline-block;*/
+    z-index: 1;
     background-color: #f4962e;
     text-decoration: none;
-/*    display: block;*/
     color: white;
     text-align: center;
     padding: 0.75em 0.75em;
     margin: 0.5em 2em  ;
-/*    margin-left: 6em;*/
-/*    margin-right: 6em;*/
     background-color:#f8ab2e;
     text-decoration: none;
     border-radius:.5em ;
@@ -378,7 +359,7 @@ button {
 
 
 
-/* wanneer je op het iput veld klikt*/
+/* wanneer je op het input veld klikt*/
 input:focus {
     background-color: #f8ab12;
 }
@@ -441,6 +422,21 @@ body a:active {
   width:180px;
 }
 
+.arrow{
+    max-width: 15%;
+    height: auto;
+    padding-bottom: 1%;
+    margin: 2%
+}
+
+.hartje{
+    max-width: 10%;
+    height: auto;
+    margin: 2%;
+}
+
+
+
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 300px) {
     .verliefd_s {
@@ -479,7 +475,7 @@ body a:active {
       margin: 10px auto 10px auto;
       width: 180px
     }
-    
+
     input[type=text], input[type=password], input[type=email] {
     margin-left: 6em;
     margin-right: 6em;
@@ -521,24 +517,24 @@ display: none;
         Height: 100%;}
 
     .gefrustreerd_d{display: none;}
-    
+
     input[type=text], input[type=password], input[type=email] {
     margin-left: 10em;
     margin-right: 10em;
     max-width: 50%;}
-        
+
     input[type=checkbox] {
     margin-top: 1em;
     display: inline-block;
 }
-   
+
     form fieldset:nth-last-child(3) label, form fieldset:nth-last-child(2) label {
         display: inline-block;
    }
-    
-   
-    
-    
+
+
+
+
 /*
     * { background-color: yellow;
 
@@ -546,23 +542,61 @@ display: none;
 */
 
 
-    main article {
-      display: flex;
-      justify-content: flex-start;
-  	   margin: .5em;
-  	   padding: .5em;
-  	   display: inline-block;
+    main section {
   	   background: white;
+       display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .arrow{
+        min-width: 15%;
+        height: auto;
+        padding-top: 1%;
+        padding-left: 30%
     }
 
-    kinderboek{
-        display: none;
+    .hartje{
+        min-width: 10%;
+        height: auto;
+        padding-right: 33%;
     }
-
+    
+    .verhaal{
+        width:  36%;
+        padding: 0;
+    }
+    
+    .gefrustreerd{
+        margin-left: 20%;
+    }
+    
+    .verliefd{
+        margin-left: 10%;
+    }
+    
+    .kinderboek{
+        margin-right: 20%;
+    }
+    
     section a {
-    margin-left: 2.5em;
-    margin-right: 2.5em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
     }
+    
+    .arrow{
+        max-width: 9%;
+        height: auto;
+        padding-bottom: 1%;
+        margin: 2%
+}
+
+    .hartje{
+        max-width: 7%;
+        height: auto;
+        margin: 2%;
+}
 }
 
 /*  DESKTOP */
@@ -592,7 +626,7 @@ display: none;
         display:block;
         width: 100%;
         Height: 100%;}
-        
+
    form fieldset:nth-last-child(3) label, form fieldset:nth-last-child(2) label {
         display: inline-block;
    }
@@ -611,15 +645,35 @@ display: none;
       margin-left: 2em;
       margin-right: 2em;
     }
+
+    input[type=text], input[type=password], input[type=email]{
+        margin-left: 15em;
+        margin-right: 15em;
+        max-width: 50%;
+    }
         
-    input[type=text], input[type=password], input[type=email] {
-    margin-left: 15em;
-    margin-right: 15em;
-    max-width: 50%;
-
-
-        }
-
+    main section {
+        flex-wrap: nowrap;
+    }
+    
+    .verhaal{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .gefrustreerd{
+        margin-left: 0%;
+    }
+    
+    .verliefd{
+        margin-left: 0%;
+    }
+    
+    .kinderboek{
+        margin-right: 0%;
+    }
+        
+}
 @keyframes shake {
   from, to {
     transform: translate3d(0, 0, 0);
@@ -634,8 +688,114 @@ display: none;
   }
 }
 .hartje {
-   height: 10%;
-   Width: 10%;
+   height: 30%;
+   Width: 30%;
    margin-top: .5em;
-   animation: shake 1.8s;
+   animation: pulse 1.0s;
+   animation-iteration-count: 3;
+}
+.arrow {
+   height: 20%;
+   Width: 20%;
+   margin-top: .5em;
+   animation: fadeInRightBig 1.0s;
+}
+.neer {
+   height: 30%;
+   Width: 30%;
+   margin-top: .5em;
+   animation: zoomInDown 2.5s;
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.zoomInDown {
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
