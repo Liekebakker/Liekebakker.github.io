@@ -79,6 +79,8 @@ h1 {
 .aanbevolen {
    animation: zoomInDown 1.5s;
 }
+.verderlezen{}
+
 h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -88,7 +90,7 @@ h2 {
 }
 
 section {
-    margin: 0 1.5% 24px 1.5%;
+    margin: 0 1.5% 1em 1.5%;
     text-align: center;
 }
 
@@ -221,7 +223,7 @@ main img: hover {
 }
 
 .header-image {
-    max-height: 300px;
+    max-height: 15em;
     overflow: hidden;
     object-fit: cover;
     position: relative;
@@ -273,19 +275,16 @@ article p {
     margin:0;
     padding-top: .5em;
     padding-bottom: .2em;
-/*    box-shadow: 5px 5px 5px #888888;*/
+
 }
 
 article a {
    text-align:center;
-   /* margin: auto;
-   width:230px;
-   height:20px; */
    color: white;
    background-color:#f8ab2e;
    text-decoration: none;
    border-radius: .5em;
-   box-shadow: 5px 5px 5px #888888;
+   box-shadow: 0.3125em 0.3125em 0.3125em #888888;
    display: block;
    padding: .5em .5em;
    margin: .5em;
@@ -309,13 +308,13 @@ button {
 /*css code hover image*/
 .plaatje {
     position: relative;
-/*    width: 50%;*/
+
     display:inline-block;
 
 }
 
 .image {
-/*  opacity: 1;*/
+
   display: block;
   width: 100%;
   height: auto;
@@ -348,8 +347,8 @@ button {
 .text {
   background-color: #73d700;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 1em;
+  padding: 1em 2em;
 }
 
 .header-image ul {
@@ -418,8 +417,8 @@ body a:active {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
-  margin-bottom: 10px;
-  width:180px;
+  margin-bottom: 0.625em;
+  width:8em;
 }
 
 .arrow{
@@ -438,7 +437,7 @@ body a:active {
 
 
 /* SMARTPHONES PORTRAIT */
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 18.75em) {
     .verliefd_s {
         display:block;
         width: 100%;
@@ -472,8 +471,8 @@ body a:active {
 
     main article a {
       text-align: center;
-      margin: 10px auto 10px auto;
-      width: 180px
+      margin: 0.625em auto 0.625em auto;
+      width: 8em;
     }
 
     input[type=text], input[type=password], input[type=email] {
@@ -488,7 +487,7 @@ body a:active {
 
 
 /* TABLETS PORTRAIT */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
         .verliefd_s {
 display: none;
 
@@ -600,7 +599,7 @@ display: none;
 }
 
 /*  DESKTOP */
-    @media only screen and (min-width: 1024px) {
+    @media only screen and (min-width: 64em) {
       .verliefd_s {
            display: none;
 
@@ -680,11 +679,11 @@ display: none;
   }
 
   10%, 30%, 50%, 70%, 90% {
-    transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-0.625em, 0, 0);
   }
 
   20%, 40%, 60%, 80% {
-    transform: translate3d(10px, 0, 0);
+    transform: translate3d(0.625em, 0, 0);
   }
 }
 .hartje {
@@ -710,16 +709,16 @@ display: none;
 @keyframes zoomInDown {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -62.5em, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -62.5em, 0);
     -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 3.75em, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 3.75em, 0);
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
@@ -733,8 +732,8 @@ display: none;
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(125em, 0, 0);
+    transform: translate3d(125em, 0, 0);
   }
 
   to {
@@ -747,8 +746,8 @@ display: none;
 @keyframes fadeInRightBig {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
+    -webkit-transform: translate3d(125em, 0, 0);
+    transform: translate3d(125em, 0, 0);
   }
 
   to {
