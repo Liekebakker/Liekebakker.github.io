@@ -38,7 +38,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
     content: none;
 
 }
@@ -79,7 +78,7 @@ h1 {
 .aanbevolen {
    animation: zoomInDown 1.5s;
 }
-.verderlezen{}
+
 
 h2 {
     text-align: center;
@@ -173,8 +172,7 @@ input[type=submit] {
 }
 
 input[type=date] {
-    margin-right: 10em 10em;
-
+    margin-right: 10em;
     margin-top: 1em;
 }
 
@@ -184,7 +182,7 @@ p {
 
 ul {
     list-style-type: none;
-    margin: 0
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #73d700;
@@ -218,7 +216,7 @@ main img {
 
 }
 
-main img: hover {
+main img:hover {
    opacity: 0.5;
 }
 
@@ -407,7 +405,7 @@ body a:hover {
 }
 
 
-/* selected link */
+/* geselecteerde link*/
 body a:active {
     color: black;
 }
@@ -421,6 +419,7 @@ body a:active {
   width:8em;
 }
 
+/*grootte van het pijltje*/
 .arrow{
     max-width: 15%;
     height: auto;
@@ -428,6 +427,7 @@ body a:active {
     margin: 2%
 }
 
+/*grootte van het hartje*/
 .hartje{
     max-width: 10%;
     height: auto;
@@ -438,30 +438,35 @@ body a:active {
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-width: 18.75em) {
+/*    Alleen smartphone formaat krijg je te zien*/
     .verliefd_s {
         display:block;
         width: 100%;
         Height: 100%;
 
+/*Op smartphone zie je de desktop en tablet vormgeving niet*/
     }
     .verliefd_i {display: none;}
     .verliefd_d {display: none;}
-
+    
+/*    Alleen smartphone formaat krijg je te zien*/
     .kinderboek_s {
         display:block;
         width: 100%;
         Height: 100%;
          }
+/*Op smartphone zie je de desktop en tablet vormgeving niet*/
     .kinderboek_i {display: none;}
     .kinderboek_d {display: none;}
-
+    
+/*Alleen smartphone formaat krijg je te zien*/
     .gefrustreerd_s {
         display:block;
         width: 100%;
         Height: 100%;
 
     }
-
+/*Op smartphone zie je de desktop en tablet vormgeving niet*/
     .gefrustreerd_i {display: none;}
     .gefrustreerd_d {display: none;}
 
@@ -475,10 +480,12 @@ body a:active {
       width: 8em;
     }
 
+
     input[type=text], input[type=password], input[type=email] {
     margin-left: 6em;
     margin-right: 6em;
     max-width: 50%;
+        
 
 }
     form fieldset:nth-last-child(3) label, form fieldset:nth-last-child(2) label {
@@ -527,18 +534,10 @@ display: none;
     display: inline-block;
 }
 
+    
     form fieldset:nth-last-child(3) label, form fieldset:nth-last-child(2) label {
         display: inline-block;
    }
-
-
-
-
-/*
-    * { background-color: yellow;
-
-    }
-*/
 
 
     main section {
@@ -673,18 +672,7 @@ display: none;
     }
         
 }
-@keyframes shake {
-  from, to {
-    transform: translate3d(0, 0, 0);
-  }
 
-  10%, 30%, 50%, 70%, 90% {
-    transform: translate3d(-0.625em, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    transform: translate3d(0.625em, 0, 0);
-  }
 }
 .hartje {
    height: 30%;
@@ -706,6 +694,7 @@ display: none;
    animation: zoomInDown 2.5s;
 }
 
+/*animatie aanbevolen valt naar beneden*/
 @keyframes zoomInDown {
   from {
     opacity: 0;
@@ -729,6 +718,8 @@ display: none;
   animation-name: zoomInDown;
 }
 
+/*animatie pijltje die van rechts veegt*/
+
 @-webkit-keyframes fadeInRightBig {
   from {
     opacity: 0;
@@ -743,6 +734,7 @@ display: none;
   }
 }
 
+/*waar veegt het pijltje heen*/
 @keyframes fadeInRightBig {
   from {
     opacity: 0;
@@ -777,6 +769,8 @@ display: none;
     transform: scale3d(1, 1, 1);
   }
 }
+
+/*kloppend hartje animatie*/
 @keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
